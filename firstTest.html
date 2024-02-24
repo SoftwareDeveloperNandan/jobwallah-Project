@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <!-- external bootstrap -->
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+
+    <!-- external jquery link -->
+    <script src="../jQuery/jquery-min.js"></script>
+
+    <!-- proper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+
+    <!-- Remix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- googel fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container mt-4">
+        <nav class="navbar shadow-sm  bg-gradient rounded navbar-expand-lg d-flex justify-content-center align-items-center">
+
+            <a href="#" class="navbar-brand me-auto p-3 fw-bold">Job Wallah</a>
+
+            <div class="mx-3" id="timer">
+                <b>Time Left</b> <span> 00 : 59 : 12 </span>
+            </div>
+            
+            <div class="button">
+                <button class="btn btn-outline-dark">Switch Full Screen</button>
+                <button class="btn btn-danger">Pause</button>
+            </div>
+
+        </nav>
+    </div>
+    <div class="container">            
+        <div class="card mt-5 ">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div class="heading">Name of the Examination....</div>
+
+                <div class="marks">
+                    <p class="m-0 p-0">Marks</p>
+                    <span class="badge rounded-pill bg-success">+2</span>
+                    <span class="badge rounded-pill bg-danger">-0.5</span>
+                </div>
+
+                <div class="time">
+                    <p class="m-0 p-0">Time</p>
+                    <b id="timeInSecond"> 00 : 20 </b>
+                </div>
+
+                <div class="d-none">Report</div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Question no. <span id="noOfQuestion">1</span></h5>
+                <div><p>First generation of computer based on?</p></div>
+                <form>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
+                        <label class="form-check-label" for="option1">VLSI</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+                        <label class="form-check-label" for="option2">Integrated Circuit</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
+                        <label class="form-check-label" for="option3">Vacume tube</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
+                        <label class="form-check-label" for="option4">Transistor</label>
+                    </div>
+
+                    </form>
+            </div>
+
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn btn-secondary">Preview</button>
+                    <button type="reset" class="btn btn-outline-info text-dark">Clear Response</button>
+                </div>
+                <div>
+                    <button class="btn btn-primary">Save & Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js -->
+    <script src="../bootstrap5/js/bootstrap.min.js"></script>
+    <!-- javaScript file -->
+    <script src="../javascript/timing.js"></script>
+</body>
+</html>

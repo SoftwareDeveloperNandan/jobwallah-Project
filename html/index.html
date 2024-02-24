@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job wallah</title>
+    <!-- external bootstrap -->
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.min.css">
+    <!-- external css link -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- external jquery link -->
+    <script src="../jQuery/jquery-min.js"></script>
+    <!-- proper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <!-- Remix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- googel fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid">
+        <nav class="navbar shadow-sm bg-body-tertiary rounded navbar-expand-lg ">
+
+            <a class="navbar-brand me-auto" href="#">Job Wallah</a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Job Wallah</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" href="#">Jobs</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Govt. Jobs</a></li>
+                                <li><a class="dropdown-item" href="#">Private Jobs</a></li>
+                                <li><a class="dropdown-item" href="#">Internship</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-lg-2 dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" href="#">Study Material</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item dropdown-item-primary" href="#">Privious Year Question (PYQ)</a></li>
+                                <li><a class="dropdown-item dropdown-item-primary" href="#">Syllabus</a></li>
+                                <li><a class="dropdown-item dropdown-item-primary" href="#">Test Series</a></li>
+                                <li><a class="dropdown-item dropdown-item-primary" href="#">Blogs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="../html/Login.html" class="btn btn-primary">Login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <!-- navbar-end -->
+
+    <!-- hero-section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6 col-sm-12 px-4">
+                    <div>
+                        <h2>Learn With Nandan</h2>
+                    </div>
+                    
+                    <div>
+                        Job Wallah opens doors to an exciting career! Our vibrant platform accelerates your professional journey. As a fresher, explore tailored job opportunities easily with our user-friendly interface. Boost skills, showcase talents, and connect with top employers. Simplifying the job search, we make it effortless for you to apply and shine. Beyond just a job portal, Job Wallah is your partner in success. Embrace possibilities, take the leap, and let Job Wallah catalyze your bright future. Your dream job awaits - join us for a world of endless possibilities!
+                    </div>
+                    
+                    <div class="my-4">
+                        <button class="btn btn-outline-primary">Dashboard</button>
+                        <button class="btn btn-primary">Learn</button>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <img src="../image/career-boost.svg" class="w-auto h-auto" alt="career-images">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero-section-end -->
+<!-- carousel 
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="card" style="width: 18rem;">
+                        <div class="img-wrapper">
+                            <img src="../image/social.png" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card" style="width: 18rem;">
+                        <div class="img-wrapper">
+                            <img src="../image/jobs.jpg" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card" style="width: 18rem;">
+                        <div class="img-wrapper">
+                            <img src="../image/google.png" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="card" style="width: 18rem;">
+                        <div class="img-wrapper">
+                            <img src="../image/convert.png" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+-->
+   <!-- notification -->
+    <section class="notification">
+            <div class="container">
+                <h3 class="text-center mb-3">Our Tools</h3>
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="../image/google.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="../image/social.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="../image/convert.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="../image/jio.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Result</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="../latestJob/firstPage.html">first</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">second</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">third</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">four</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">five</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">six</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">seven</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">eight</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Admit Card</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="">UP Police Constable Admit Card 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">IBPS PO XIII Interview Letter</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSC Engineering Services 2024 Pre Admit Card</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">SSC GD Constable Admit Card 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSC Geo Scientist 2024 Pre Admit Card</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">RSMSSB Sangnak Computer Exam Date 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UP Police Constable Example OMR Sheet 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">BPSC Various Agriculture Post Exam Date 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">DSSSB Admit Card 12-18 February 2024 Exam</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Delhi High Court PA Stage II Admit Card 2024</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Latest Job</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSC Civil Services IAS / IFS Pre Online Form 2024<span class="badge rounded-pill bg-danger">new</span></a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">SBI Specialist Officer SO Online Form 2024<span class="badge rounded-pill bg-danger">new</span></a></li>
+                        <li class="list-group-item list-group-item-action"><a href="../latestJob/firstPage.html">Army Agniveer Religious Teacher, Nursing Assistant, Sepoy Pharma CEE Online Form 2024 <span class="badge rounded-pill bg-danger">new</span></a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Coast Guard Navik GD 02/2024 Online Form</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Jharkhand High Court Assistant Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Haryana Police Constable Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">ISRO URSC Various Post Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">BPSC School Teacher TRE 3.0 Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Rajasthan High Court JPA Hindi Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">DSSSB TGT, MTS Post Online Form 2024</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Answer Key</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="">first</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">second</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">third</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">four</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">five</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">six</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">seven</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">eight</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Syllabus</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="">first</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">second</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">third</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">four</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">five</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">six</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">seven</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">eight</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
+                    
+                    <ul class="list-group">
+                        <div class="list-group-item text-center active"><h4>Addmission</h4></div>
+                        <li class="list-group-item list-group-item-action"><a href="">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">second</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">third</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">four</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">five</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">six</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">seven</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">eight</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <button class="btn btn-primary" id="moreInfoBtn">More Information</button>
+    </div>
+
+
+    <hr>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
+                    <h4>Contact us</h4>
+                    <form action="" class="footer-form">
+                        <input type="text" id="fullname" class="form-control" placeholder="Full name" autocomplete="none">
+                        <input type="text" id="userEmail" class="form-control " placeholder="Your email" autocomplete="none">
+                        <input type="phone" id="userPhone" class="form-control" placeholder="Your phone number" autocomplete="none">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
+                    <h4>Important Links</h4>
+                    <div class="footer-links">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Jobs</a>
+                        <a href="#" class="nav-link">Quiz</a>
+                        <a href="#" class="nav-link">Test Series</a>
+                        <a href="#" class="nav-link">Syllabus</a>
+                        <a href="#" class="nav-link">About</a>
+                        <a href="#" class="nav-link">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
+                    <h4>About us</h4>
+                    <div class="footer-info">
+                        <img src="your-logo.png" alt="Logo">
+                        <p>123 Main Street, Cityville Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facere</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p><a href="link">www.jobwallah.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="../bootstrap5/js/bootstrap.min.js"></script>
+</body>     
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <!-- googel fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="../css/Login.css" type="text/css" media="all" />
+
+    <!-- fontawesome v5 -->
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login">
+        <span class="fas fa-sign-in-alt"></span>
+        <strong>Welcome!</strong>
+        <span>Sign in to your account</span>
+
+        <form action="#" method="post" class="login-form">
+            <fieldset>
+                <div class="form">
+                    <div class="form-row">
+                        <span class="fas fa-user"></span>
+                        <label class="form-label" for="input">E-mail</label>
+                        <input type="email" class="form-text">
+                    </div>
+                    <div class="form-row">
+                        <span class="fas fa-eye"></span>
+                        <label class="form-label" for="input">Password</label>
+                        <input type="password" class="form-text">
+                    </div>
+                    <div class="form-row bottom">
+                        <div class="form-check">
+                            <input type="checkbox" id="remember" name="remenber" >
+                            <label for="remember"> Remember me?</label>
+                        </div>
+                        <a href="../html/Signin.html" class="forgot">Forgot password?</a>
+                    </div>
+                    <div class="form-row button-login">
+                        <button class="btn btn-login">Login <span
+                            class="fas fa-arrow-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
