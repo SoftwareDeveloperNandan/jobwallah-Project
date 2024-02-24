@@ -17,7 +17,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- googel fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
-
+    <!-- typed js link -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
@@ -59,6 +60,7 @@
                                 <li><a class="dropdown-item dropdown-item-primary" href="#">Blogs</a></li>
                             </ul>
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Quiz</a>
                         </li>
@@ -71,7 +73,9 @@
                     </ul>
                 </div>
             </div>
-            <a href="../html/Login.html" class="btn btn-primary">Login</a>
+
+            <a href="../html/Login.html" class="login-btn pe-4"> Login <i class="ri-arrow-right-line"></i></a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -85,17 +89,22 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-md-6 col-sm-12 px-4">
-                    <div>
-                        <h2>Learn With Nandan</h2>
+                    <div class="mb-3">
+                        <p class="fw-bold fs-1">Touch the future with Jobwallah and find
+                            <span class="text-primary text-highlight-warning">
+                                <span class="js-typedjs">Quiz</span>
+                                <span class="typed-cursor typed-cursor-blink" aria-hidden="true"></span>
+                            </span>
+                        </p>
                     </div>
                     
-                    <div>
-                        Job Wallah opens doors to an exciting career! Our vibrant platform accelerates your professional journey. As a fresher, explore tailored job opportunities easily with our user-friendly interface. Boost skills, showcase talents, and connect with top employers. Simplifying the job search, we make it effortless for you to apply and shine. Beyond just a job portal, Job Wallah is your partner in success. Embrace possibilities, take the leap, and let Job Wallah catalyze your bright future. Your dream job awaits - join us for a world of endless possibilities!
+                    <div class="text-bg-light">
+                        <p>Job Wallah offers a dynamic platform for career growth, particularly beneficial for freshers. With a user-friendly interface, it provides tailored job opportunities, skill enhancement, and connections with leading employers. More than a job portal, it serves as a success partner, simplifying the job search and catalyzing a bright future. Join for endless possibilities!</p>
                     </div>
                     
                     <div class="my-4">
-                        <button class="btn btn-outline-primary">Dashboard</button>
-                        <button class="btn btn-primary">Learn</button>
+                        <button class="btn btn-outline-dark me-2">Dashboard</button>
+                        <button class="btn btn-primary">Learn <i class="ri-arrow-right-line"></i></button>
                         
                     </div>
                 </div>
@@ -105,87 +114,15 @@
             </div>
         </div>
     </section>
-    <!-- hero-section-end -->
-<!-- carousel 
-    <div class="container">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
 
-                <div class="carousel-item active">
-                    <div class="card" style="width: 18rem;">
-                        <div class="img-wrapper">
-                            <img src="../image/social.png" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="card" style="width: 18rem;">
-                        <div class="img-wrapper">
-                            <img src="../image/jobs.jpg" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="card" style="width: 18rem;">
-                        <div class="img-wrapper">
-                            <img src="../image/google.png" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="card" style="width: 18rem;">
-                        <div class="img-wrapper">
-                            <img src="../image/convert.png" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
--->
-   <!-- notification -->
     <section class="notification">
             <div class="container">
-                <h3 class="text-center mb-3">Our Tools</h3>
+                <div class="w-100 h-auto flex flex-wrap text-center">
+                    <div class="w-100 h-auto">
+                        <p class="fw-bold fs-2 mb-5 text-with-line">Our Tools</p>
+                    </div>
+                </div>
+                
                 <div class="row">
 
                     <div class="col-md-6 col-lg-3 col-sm-6 mb-3">
@@ -234,16 +171,22 @@
                     
                     <ul class="list-group">
                         <div class="list-group-item text-center active"><h4>Result</h4></div>
-                        <li class="list-group-item list-group-item-action"><a href="../latestJob/firstPage.html">first</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">second</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">third</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">four</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">five</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">six</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">seven</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">eight</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
-                        <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Bihar Vidhan Parishad Driver, Attendant Final Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">NTA CUREC Non Teaching Various Post Stage I Result 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSSSC Gram Vikas Adhikari VDO 2018 Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">CISF ASI / STENO 2022 Skill Test Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSC CMS 2022 Marks</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSC IES / ISS 2023 Marks</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPPSC Staff Nurse 2023 Pre Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">MP High School Teacher Selection Test HSTST 2023 Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">UPSSSC Junior Engineer 2018 Supplementary Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">SSC Delhi Police Constable 2022 Detailed Marks</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">SSC Delhi Police Constable 2022 Detailed Marks</a></li>
+                        <li class="list-group-item list-group-item-action text-center">
+                            <a href="" target="_blank">
+                                <button class="btn btn-outline-primary btn-sm">Read more</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -261,6 +204,12 @@
                         <li class="list-group-item list-group-item-action"><a href="">BPSC Various Agriculture Post Exam Date 2024</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">DSSSB Admit Card 12-18 February 2024 Exam</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">Delhi High Court PA Stage II Admit Card 2024</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="">Delhi High Court PA Stage II Admit Card 2024</a></li>
+                        <li class="list-group-item list-group-item-action text-center">
+                            <a href="" target="_blank">
+                                <button class="btn btn-outline-primary btn-sm">Read more</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
@@ -278,12 +227,16 @@
                         <li class="list-group-item list-group-item-action"><a href="">BPSC School Teacher TRE 3.0 Online Form 2024</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">Rajasthan High Court JPA Hindi Online Form 2024</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">DSSSB TGT, MTS Post Online Form 2024</a></li>
+                        <li class="list-group-item list-group-item-action text-center">
+                            <a href="" target="_blank">
+                                <button class="btn btn-outline-primary btn-sm">Read more</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <hr>
 
     <section>
         <div class="container">
@@ -303,6 +256,7 @@
                         <li class="list-group-item list-group-item-action"><a href="">nine</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">ten</a></li>
                     </ul>
+
                 </div>
 
                 <div class="col-md-4 col-xl-4 col-sm-12 mb-3 ">
@@ -382,7 +336,7 @@
                         <img src="your-logo.png" alt="Logo">
                         <p>123 Main Street, Cityville Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facere</p>
                         <p>Phone: (123) 456-7890</p>
-                        <p><a href="link">www.jobwallah.com</a></p>
+                        <p><a href="#">www.jobwallah.com</a></p>
                     </div>
                 </div>
 
@@ -392,6 +346,8 @@
 
     <!-- bootstrap js -->
     <script src="../bootstrap5/js/bootstrap.min.js"></script>
+    <script src="../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 </body>     
-
 </html>

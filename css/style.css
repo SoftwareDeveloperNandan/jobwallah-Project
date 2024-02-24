@@ -68,7 +68,8 @@ body{
    background: #d6cfcf;
    color: #000000;
 }
-@media (min-width: 680px){
+
+@media (min-width: 680px) {
     .nav-link::before{
         content: "";
         position: absolute;
@@ -81,11 +82,20 @@ body{
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
+
     .nav-link:hover::before, .nav-link.active::before{
         width: 100%;
         visibility: visible;
     }
+
 }
+
+@media (max-width: 480px){
+    .login-btn{
+        display: none;
+    }
+}
+
 .hero-section{
     height: 100%;
     width: 100%;
@@ -135,6 +145,24 @@ img{
     }
 }
 */
+
+.text-with-line{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.text-with-line::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #62b4f8;
+    position: absolute;
+    left: 26%;
+    bottom: 0;
+}
+
 .notification{
     padding: 20px;
     height: 100%;
