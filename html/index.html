@@ -15,6 +15,8 @@
     <script src="../jQuery/jquery-min.js"></script>
     <!-- proper js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <!-- Font awesonme cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Remix icon cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- googel fonts -->
@@ -64,7 +66,7 @@
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Quiz</a>
+                            <a class="nav-link mx-lg-2" href="../firstTest.html">Quiz</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Contact Us</a>
@@ -76,7 +78,9 @@
                 </div>
             </div>
 
-            <a href="../html/Login.html" class="login-btn pe-4"> Login <i class="ri-arrow-right-line"></i></a>
+            <div class="login-btn pe-4 ">
+                <a href="../html/Login.html"> Login <i class="ri-arrow-right-line"></i></a>
+            </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -110,17 +114,17 @@
                         
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6 col-sm-12">
-                    <img src="../image/career-boost.svg" class="w-auto h-auto" alt="career-images">
+                <div class="col-xl-6 col-md-6 col-sm-12 bg-transparent ">
+                    <img src="../image/next-step.gif" alt="career-images" class="img-fluid gif-container">   
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="notification">
+    <section class="notification mb-5">
             <div class="container">
                 <div class="w-100 h-auto flex flex-wrap text-center">
-                    <div class="w-100 h-auto">
+                    <div class="w-100 h-auto my-5">
                         <p class="fw-bold fs-2 mb-5 text-with-line">Our Tools</p>
                     </div>
                 </div>
@@ -185,7 +189,7 @@
                     
                     <ul class="list-group">
                         <div class="list-group-item text-center active"><h4>Result</h4></div>
-                        <li class="list-group-item list-group-item-action"><a href="">Bihar Vidhan Parishad Driver, Attendant Final Result</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="https://www.sarkariresult.com/bihar/bihar-vidhan-01-04-2023/">Bihar Vidhan Parishad Driver, Attendant Final Result</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">NTA CUREC Non Teaching Various Post Stage I Result 2024</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">UPSSSC Gram Vikas Adhikari VDO 2018 Result</a></li>
                         <li class="list-group-item list-group-item-action"><a href="">CISF ASI / STENO 2022 Skill Test Result</a></li>
@@ -314,52 +318,160 @@
         <button class="btn btn-primary" id="moreInfoBtn">More Information</button>
     </div>
 
-
-    <hr>
-
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
-                    <h4>Contact us</h4>
-                    <form action="" class="footer-form">
-                        <input type="text" id="fullname" class="form-control" placeholder="Full name" autocomplete="none">
-                        <input type="text" id="userEmail" class="form-control " placeholder="Your email" autocomplete="none">
-                        <input type="phone" id="userPhone" class="form-control" placeholder="Your phone number" autocomplete="none">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-
-                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
-                    <h4>Important Links</h4>
-                    <div class="footer-links">
-                        <a href="#" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">Jobs</a>
-                        <a href="#" class="nav-link">Quiz</a>
-                        <a href="#" class="nav-link">Test Series</a>
-                        <a href="#" class="nav-link">Syllabus</a>
-                        <a href="#" class="nav-link">About</a>
-                        <a href="#" class="nav-link">Contact Us</a>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xl-4 col-sm-12 footer-section">
-                    <h4>About us</h4>
-                    <div class="footer-info">
-                        <img src="your-logo.png" alt="Logo">
-                        <p>123 Main Street, Cityville Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facere</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p><a href="#">www.jobwallah.com</a></p>
-                    </div>
-                </div>
-
+    <section class="container mt-5">
+        <div class="d-flex flex-column flex-md-row position-relative">
+            <img src="../image/BlogPost.gif" class="flex-shrink-0 me-md-3 mb-3 mb-md-0" alt="...">
+            <div>
+                <h5 class="mt-5">Custom component with stretched link</h5>
+                <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                <a href="#" class="stretched-link">Go somewhere</a>
             </div>
         </div>
-        <div class="text-center m-0">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </section>
+    
+    <hr>
+
+     <!-- Footer-->
+     <div class="w-auto my-3">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #17191d">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Jobwallah
+                    </h6>
+                    <div class="logo">
+                        <p>Write logo</p>
+                    </div>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none" />
+    
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                    <a class="text-white cursor">Online Test</a>
+                </p>
+                <p>
+                    <a class="text-white cursor">New Job Opening</a>
+                </p>
+                <p>
+                    <a class="text-white cursor">Internship</a>
+                </p>
+                <p>
+                    <a class="text-white cursor">Blog</a>
+                </p>
+                </div>
+                <!-- Grid column -->
+    
+                <hr class="w-100 clearfix d-md-none" />
+    
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Useful links
+                </h6>
+                <p>
+                    <a class="text-white">Home</a>
+                </p>
+                <p>
+                    <a class="text-white">About</a>
+                </p>
+                <p>
+                    <a class="text-white">Contect-us</a>
+                </p>
+                <p>
+                    <a class="text-white">Help</a>
+                </p>
+                </div>
+    
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+    
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> Gate No. 05 </p>
+                <p><i class="fas fa-envelope mr-3"></i> Jobwallah@Support.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 91-9297511838</p>
+                <p><i class="fas fa-print mr-3"></i> + 91-7667488983</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+    
+            <hr class="my-3">
+    
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <!-- Copyright -->
+                <div class="p-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="/html/index.html"
+                    >Jobwallah.com</a
+                    >
+                </div>
+                <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <!-- Facebook -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+    
+                <!-- Twitter -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+    
+                <!-- Google -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+    
+                <!-- Instagram -->
+                <a
+                    class="btn btn-outline-light btn-floating m-1"
+                    class="text-white"
+                    role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <!-- Grid column -->
+            </div>
+            </section>
+            <!-- Section: Copyright -->
         </div>
-    </footer>
+        <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <!-- Footer end-->
+
 
     <!-- bootstrap js -->
     <script src="../bootstrap5/js/bootstrap.min.js"></script>

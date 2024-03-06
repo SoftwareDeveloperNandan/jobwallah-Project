@@ -16,20 +16,22 @@
     <!-- Remix icon cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
 
+    <!-- External css -->
+    <link rel="stylesheet" href="../jobwallah-Project/css/myQuiz.css">
     <!-- googel fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 </head>
 <body>
     <div class="container mt-4">
-        <nav class="navbar shadow-sm  bg-gradient rounded navbar-expand-lg d-flex justify-content-center align-items-center">
+        <nav class="navbar shadow-sm rounded navbar-expand-lg d-flex justify-content-center align-items-center">
 
-            <a href="#" class="navbar-brand me-auto p-3 fw-bold">Job Wallah</a>
+            <a href="../jobwallah-Project/html/index.html" class="navbar-brand me-auto p-3 fw-bold">Job Wallah</a>
 
             <div class="mx-3" id="timer">
                 <b>Time Left</b> <span> 00 : 59 : 12 </span>
             </div>
             
-            <div class="button">
+            <div class="pe-3">
                 <button class="btn btn-outline-dark">Switch Full Screen</button>
                 <button class="btn btn-danger">Pause</button>
             </div>
@@ -37,7 +39,7 @@
         </nav>
     </div>
     <div class="container">            
-        <div class="card mt-5 ">
+        <div class="card mt-5 my-card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div class="heading">Name of the Examination....</div>
 
@@ -84,7 +86,7 @@
 
             <div class="card-footer d-flex justify-content-between align-items-center">
                 <div>
-                    <button class="btn btn-secondary">Preview</button>
+                    <button class="btn btn-secondary">Previous</button>
                     <button type="reset" class="btn btn-outline-info text-dark">Clear Response</button>
                 </div>
                 <div>
