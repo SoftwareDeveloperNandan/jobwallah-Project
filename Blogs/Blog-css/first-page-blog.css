@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     user-select: none;
+    
 }
 a{
     text-decoration: none;
@@ -12,6 +13,7 @@ body{
     height: 100%;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.5s ease-in;
 }
 .navbar{
     color: #000000;
@@ -92,10 +94,6 @@ body{
     .login-btn{
         display: none;
     }
-    body {
-        background: #000000;
-        color: #ffffff;
-    }
 }
 
 .hero-section{
@@ -149,4 +147,12 @@ body{
 hr {
     border: 1px solid #130e0e;
     margin: 20px 0;
+}
+/* coding container */
+.coding-box {
+    box-shadow: inset 5px 10px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px rgba(255, 255, 255, .1);
+}
+
+.list-unstyled:hover {
+   text-decoration: underline;
 }

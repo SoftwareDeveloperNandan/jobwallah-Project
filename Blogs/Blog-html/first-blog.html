@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First blog</title>
     <!-- Bootstrap link -->
-    <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css" />
     <!-- Css link from Blog-css -->
-    <link rel="stylesheet" href="../Blog-css/first-page-blog.css">
+    <link rel="stylesheet" href="../Blog-css/first-page-blog.css" />
     <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
+    <!-- Bootstrap icon link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
@@ -18,7 +20,8 @@
     <nav class="navbar sticky-top shadow-sm p-3 mb-3 bg-body-tertiary rounded navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/image/bootstrap-fill.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="/image/bootstrap-fill.svg" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -30,10 +33,11 @@
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active mx-lg-2 fw-semibold " aria-current="page" href="#">Home</a>
+                            <a class="nav-link active mx-lg-2 fw-semibold" aria-current="page" href="../Blog-html/home.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link mx-lg-2 dropdown-toggle fw-bold" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" href="#">Jobs</a>
+                            <a class="nav-link mx-lg-2 dropdown-toggle fw-bold" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" role="button" href="#">Jobs</a>
 
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Govt. Jobs</a></li>
@@ -41,18 +45,28 @@
                                 <li><a class="dropdown-item" href="#">Internship</a></li>
                             </ul>
                         </li>
-                        
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link mx-lg-2 dropdown-toggle fw-semibold" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" href="#">Study Material</a>
+                            <a class="nav-link mx-lg-2 dropdown-toggle fw-semibold" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" role="button" href="#">Study Material</a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item dropdown-item-primary " href="#">Privious Year Question (PYQ)</a></li>
-                                <li><a class="dropdown-item dropdown-item-primary " href="#">Syllabus</a></li>
-                                <li><a class="dropdown-item dropdown-item-primary " href="#">Test Series</a></li>
-                                <li><a class="dropdown-item dropdown-item-primary " href="#">Blogs</a></li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-primary" href="#">Privious Year Question
+                                        (PYQ)</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-primary" href="#">Syllabus</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-primary" href="#">Test Series</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item dropdown-item-primary" href="#">Blogs</a>
+                                </li>
                             </ul>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2 fw-semibold" href="#">Quiz</a>
                         </li>
@@ -65,9 +79,13 @@
                     </ul>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-success" type="submit">Search</button>
                 </form>
+
+                <div class="navbar-brand d-inline-block align-text-top" width="30" height="24" onclick="bgChanger()">
+                    <a href="#"><i class="bi bi-moon-stars-fill"></i></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -76,57 +94,205 @@
     <!-- Body section -->
     <section class="mt-5">
         <div class="container">
-            <div class="">
-                <h1 class="">This is my blog heading...</h1>
-                <p>This is my subheading.....</p>
+            <div class="headingOfBlog mb-3 p-3">
+                <h1 class="fw-bold">Introduction to JavaScript.</h1>
+                <div class="border-bottom"></div>
             </div>
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-sm-12">
-                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg" alt="Blog-images" class="img-fluid mx-auto rounded">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0"
+                        data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                        <div class="p-3 rounded-3" id="list1">
+                            <h3 class="fw-bolder">What is JavaScript?</h3>
+                            <p>
+                                JavaScript is a high-level, interpreted programming language
+                                primarily known for its role in building interactive and
+                                dynamic content on the web. It is a versatile language that
+                                can be used both on the client side (in web browsers) and
+                                server side (using technologies like Node.js). JavaScript
+                                allows developers to create responsive and interactive user
+                                interfaces, handle asynchronous events, and perform various
+                                tasks on the client side.
+                            </p>
+                            <img src="/image/javascript.jpg" alt="Blog-images" class="img-fluid mx-auto rounded mb-3" />
+                        </div>
 
-                        <h4 id="#list1">item-1</h4>
-                        <p>
-                        Eligendi dignissimos iste hic minima voluptate, sint adipisci omnis porro nam earum animi quod architecto delectus minus vero repudiandae ipsum, ab odit consectetur ullam, maxime tenetur beatae veritatis quisquam! Alias.
-                        Provident eligendi alias corrupti quas sapiente in sit! Fugiat, quaerat, velit aut tenetur ipsam quae a suscipit aspernatur doloribus nam odio cupiditate quisquam ratione ducimus corrupti repellendus eligendi quibusdam unde!
-                        Facere est unde nam ratione quia, possimus voluptas obcaecati qui eveniet consequuntur quisquam tenetur odio distinctio eum sint commodi animi reprehenderit doloribus, reiciendis maiores ipsa omnis recusandae iure modi! Nihil?
-                        Cum sunt voluptatum deserunt voluptate veniam dolor blanditiis illo saepe eius tenetur aliquid earum molestias repudiandae sapiente a adipisci vero quod, ullam dignissimos aliquam repellat numquam et, cumque doloremque. Voluptate!
-                        Dolorum molestiae exercitationem labore saepe rem earum maiores obcaecati voluptatem dolorem possimus dignissimos aliquam fugit quam ratione beatae doloribus, enim quis nihil cumque mollitia voluptatum id. Laboriosam ipsa harum consequatur.
-                        Fuga obcaecati delectus id consequuntur voluptatum tempora dolor ut porro natus! Tenetur labore eveniet excepturi. At, enim? Quam, modi quisquam sequi asperiores voluptas magnam omnis repudiandae, magni dolor mollitia vel?</p>
+                        <div class="p-3 rounded-3" id="list2">
+                            <h3 class="fw-bolder">Linking JavaScript with HTML?</h3>
+                            <p>
+                                To integrate JavaScript into HTML, a script tag is utilized
+                                within the HTML document. Developers can either embed the
+                                script directly or link to an external JavaScript file using
+                                the &lt;script&gt; tag.
+                            </p>
+                            <div class="coding-box">
+                                <pre class="language-javascript">
+                                    <code>
+                                        &lt;script&gt;
+                                            function sayHello () {
+                                                alert("hello world!")
+                                            }
+                                        &lt;/script&gt;
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
 
-                        <h4 id="list2">item-2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus tempore repellat deleniti asperiores voluptatibus molestias inventore laudantium voluptas accusantium doloribus, excepturi minus error! Quos quibusdam pariatur voluptates aperiam inventore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolores molestiprehenderit commodi tempore delectus repudiandae similique aliquam soluta quo vitae eveniet at cumque aperiam qui pariatur fugiat aliquid officiis aut ratione reiciendis, itaque voluptatum!</p>
+                        <div class="p-3 rounded-3" id="list3">
+                            <h3 class="fw-bolder">History of JavaScript:</h3>
+                            <p>
+                                JavaScript was created by Brendan Eich in 1995 while he was
+                                working at Netscape Communications Corporation. Originally
+                                named "Mocha" and later "LiveScript," it eventually became
+                                JavaScript to ride the coattails of Java's popularity. Despite
+                                the name similarity, JavaScript and Java are distinct
+                                languages with different purposes.
+                            </p>
+                        </div>
 
-                        <h4 id="list3">item-3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus tempore repellat deleniti asperiores voluptatibus molestias inventore laudantium voluptas accusantium doloribus, excepturi minus error! Quos quibusdam pariatur voluptates aperiam inventore?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos perspiciatis, illum sapiente laudantium officia magni ea voluptatum vero dicta exercitationem expedita rerum quisquam unde accusantium reprehenderit earum consequuntur similique nesciunt.
-                        Quibusdam veritatis modi debitis, commodi magnam architecto tempora vitae repellendus non eligendi nam sed voluptatem distinctio reiciendis error dignissimos? Architecto deserunt animi magnam qui suscipit voluptatem placeat commodi eaque numquam?
-                        Praesentium nobis, veritatis sequi maiores nulla omnis? Vel, consequatur. Vel eligendi voluptates ea? Officiis non illum assumenda, eveniet debitis, voluptas sed, iusto obcaecati nisi nostrum ipsa sit molestias. Veniam, reiciendis?
-                        Reprehenderit ducimus eum beatae? Labore placeat quisquam incidunt! A perspiciatis veritatis iure provident similique labore vel facilis at pariatur molestiae totam eum doloribus quibusdam porro, nihil distinctio voluptas laudantium tempora?</p>
+                        <div class="p-3 rounded-3" id="list4">
+                            <h3 class="fw-bolder">Features of JavaScript:</h3>
+                            <ul class="list-group">
+                                <li>
+                                    <span class="fw-semibold">Interactivity:-</span>
+                                    <span>Enables dynamic content and real-time updates on web
+                                        pages.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Asynchronous Execution:-</span>
+                                    <span>Follows an object-oriented programming paradigm.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Versatility:-</span>
+                                    <span>Used for both client-side and server-side
+                                        scripting.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Object-Oriented:-</span>
+                                    <span>UFollows an object-oriented programming paradigm.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Cross-platform Compatibility:-</span>
+                                    <span>Runs on various browsers and platforms.</span>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <h4 id="list4">item-4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus tempore repellat deleniti asperiores voluptatibus molestias inventore laudantium voluptas accusantium doloribus, excepturi minus error! Quos quibusdam pariatur voluptates aperiam inventore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae facilis a ut modi cum quo harum, officia asperiores aut quis quae cupiditate, autem consectetur labore ducimus fugit iusto alias?
-                        Necessitatibus provident aspernatur veniam debitis voluptatum culpa impedit incidunt accusantium delectus, rem labore, dolores ea officiis ipsum quia libero tenetur asperiores, vero aliquid sapiente molestiae saepe suscipit voluptatibus consequatur. Voluptate.
-                        Placeat eius inventore assumenda, officiis nisi quam accusantium, pariatur rem, reiciendis exercitationem maxime rerum labore explicabo numquam in quis repellendus tenetur adipisci autem cum consequatur! Voluptates tenetur aspernatur deserunt dolorem!
-                        Excepturi maxime possimus repudiandae vel at fugiat iure recusandae dolore in nemo omnis architecto, corrupti necessitatibus pariatur voluptatum quae, cupiditate saepe neque est soluta. Ipsa qui voluptatum deleniti est assumenda.
-                        Facere harum autem ipsum dignissimos, qui maxime voluptatibus itaque nihil beatae at nulla voluptate placeat soluta ratione quia amet, corporis totam ex eum nobis omnis impedit. Saepe ipsam aliquid sit?</p>
+                        <div class="p-3 rounded-3" id="list5">
+                            <h3 class="fw-bolder">Applications of JavaScript:</h3>
+                            <ul class="list-group">
+                                <li>
+                                    <span class="fw-semibold">Web Development:-</span>
+                                    <span>Enhances user interfaces and enables dynamic
+                                        content.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Web Servers:-</span>
+                                    <span>Used with Node.js for server-side scripting.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Mobile App Development:-</span>
+                                    <span>Utilized in frameworks like React Native</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Game Development:-</span>
+                                    <span>Supports game engines like Phaser and Three.js.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 rounded-3" id="list6">
+                            <h3 class="fw-bolder">Limitations of JavaScript:</h3>
+                            <ul class="list-group">
+                                <li>
+                                    <span class="fw-semibold">Security Concerns:-</span>
+                                    <span>Vulnerable to cross-site scripting (XSS) attacks.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Limited Storage:-</span>
+                                    <span>Browser-based, leading to limited client-side
+                                        storage.</span>
+                                </li>
+                                <li>
+                                    <span class="fw-semibold">Single-threaded Execution:-</span>
+                                    <span>Can lead to performance bottlenecks.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="p-3 rounded-3" id="list7">
+                            <h3 class="fw-bolder">
+                                Why JavaScript is Known as a Lightweight Programming Language
+                                ?
+                            </h3>
+                            <p>
+                                JavaScript is often deemed lightweight due to its minimalistic
+                                syntax, quick execution, and its focus on client-side tasks,
+                                which alleviates the server's workload.
+                            </p>
+                        </div>
+                        <div class="p-3 rounded-3" id="list8">
+                            <h3 class="fw-bolder">
+                                Is JavaScript Compiled or Interpreted or Both ?
+                            </h3>
+                            <p>
+                                JavaScript is generally considered an interpreted language.
+                                However, modern JavaScript engines utilize a combination of
+                                interpretation and just-in-time (JIT) compilation for
+                                optimized performance. The interpreter reads and executes the
+                                code line by line, while the JIT compiler translates parts of
+                                the code into machine code for faster execution.
+                            </p>
+                        </div>
+
+                        <div class="p-3 rounded-3" id="list9">
+                            <h3 class="fw-bolder">Conclusion</h3>
+                            <p>
+                                In conclusion, JavaScript's evolution from a simple
+                                client-side scripting language to a versatile tool for web
+                                development and beyond showcases its enduring significance in
+                                the digital landscape. Should you have any queries or seek
+                                further clarification, please don't hesitate to reach out.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-md-4 col-sm-12" id="scrolly-section">
-                    <div class="position-fixed list-group">
+                    <div class="position-fixed list-group" id="modeChange">
                         <ul class="list-group" id="list-example">
-                            <li class="list-group-item list-group-item-action active fw-bold"><a href="#list1">In this article</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list2">Second Lorem ipsum dolor sit amet.</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list4">Third Lorem ipsum dolor sit amet.</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list3">Third Lorem ipsum dolor sit amet.</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list4">Third Lorem ipsum dolor sit amet.</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list1">Third Lorem ipsum dolor sit amet.</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="#list4">Third Lorem ipsum dolor sit amet.</a></li>
+                            <li class="list-unstyled active fw-bold">
+                                <a href="#"> In This Article</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list1">What is JavaScript?</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list2">Linking JavaScript with HTML?</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list3">History of JavaScript.</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list4">Features of JavaScript.</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list5">Application of javaScript.</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list6">Limitation of javaScript</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list7">Why JavaScript is Known as a Lightweight Programming
+                                    Language:</a>
+                            </li>
+                            <li class="list-unstyled">
+                                <a href="#list8">Is JavaScript Compiled or Interpreted or Both?</a>
+                            </li>
+                            <li class="list-unstyled"><a href="#list9">Conclusion</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- Body section end -->
@@ -135,138 +301,120 @@
     <div class="container-fluid my-3">
         <!-- Footer -->
         <footer class="text-center text-lg-start text-white" style="background-color: #17191d">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Links -->
-            <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">
-                        Jobwallah
-                    </h6>
-                    <div class="logo">
-                        <p>Write logo</p>
-                    </div>
-                </div>
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Links -->
+                <section class="">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Jobwallah</h6>
+                            <div class="logo">
+                                <p>Write logo</p>
+                            </div>
+                        </div>
 
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p>
-                    <a class="text-white cursor">Online Test</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">New Job Opening</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">Internship</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">Blog</a>
-                </p>
-                </div>
-                <!-- Grid column -->
-    
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">
-                    Useful links
-                </h6>
-                <p>
-                    <a class="text-white cursor">Home</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">About</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">Contect-us</a>
-                </p>
-                <p>
-                    <a class="text-white cursor">Help</a>
-                </p>
-                </div>
-    
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none" />
-    
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p><i class="fas fa-home mr-3"></i> Gate No. 05 </p>
-                <p><i class="fas fa-envelope mr-3"></i> Jobwallah@Support.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 91-9297511838</p>
-                <p><i class="fas fa-print mr-3"></i> + 91-7667488983</p>
-                </div>
-                <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                            <p>
+                                <a class="text-white cursor">Online Test</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">New Job Opening</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">Internship</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">Blog</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Useful links
+                            </h6>
+                            <p>
+                                <a class="text-white cursor">Home</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">About</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">Contect-us</a>
+                            </p>
+                            <p>
+                                <a class="text-white cursor">Help</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> Gate No. 05</p>
+                            <p>
+                                <i class="fas fa-envelope mr-3"></i> Jobwallah@Support.com
+                            </p>
+                            <p><i class="fas fa-phone mr-3"></i> + 91-9297511838</p>
+                            <p><i class="fas fa-print mr-3"></i> + 91-7667488983</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+                <hr class="my-3" />
+
+                <!-- Section: Copyright -->
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <!-- Grid column -->
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <!-- Copyright -->
+                            <div class="p-3">
+                                © 2020 Copyright:
+                                <a class="text-white" href="/html/index.html">Jobwallah.com</a>
+                            </div>
+                            <!-- Copyright -->
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="bi bi-facebook"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="bi bi-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+                                    class="bi bi-instagram"></i></a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                </section>
+                <!-- Section: Copyright -->
             </div>
-            <!--Grid row-->
-            </section>
-            <!-- Section: Links -->
-    
-            <hr class="my-3">
-    
-            <!-- Section: Copyright -->
-            <section class="p-3 pt-0">
-            <div class="row d-flex align-items-center">
-                <!-- Grid column -->
-                <div class="col-md-7 col-lg-8 text-center text-md-start">
-                <!-- Copyright -->
-                <div class="p-3">
-                    © 2020 Copyright:
-                    <a class="text-white" href="/html/index.html"
-                    >Jobwallah.com</a
-                    >
-                </div>
-                <!-- Copyright -->
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-                <!-- Facebook -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-facebook-f"></i
-                    ></a>
-    
-                <!-- Twitter -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-twitter"></i
-                    ></a>
-    
-                <!-- Google -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-google"></i
-                    ></a>
-    
-                <!-- Instagram -->
-                <a
-                    class="btn btn-outline-light btn-floating m-1"
-                    class="text-white"
-                    role="button"
-                    ><i class="fab fa-instagram"></i
-                    ></a>
-                </div>
-                <!-- Grid column -->
-            </div>
-            </section>
-            <!-- Section: Copyright -->
-        </div>
-        <!-- Grid container -->
+            <!-- Grid container -->
         </footer>
         <!-- Footer -->
     </div>
@@ -277,14 +425,30 @@
     <script src="/bootstrap5/js/bootstrap.min.js"></script>
     <script>
         window.addEventListener("scroll", () => {
-
             var scrolledPosition = window.scrollY;
-            if(scrolledPosition > 1450){
-                document.getElementById("scrolly-section").classList.add("d-none")
-            }else {
-                document.getElementById("scrolly-section").classList.remove("d-none")
+            if (scrolledPosition > 1850) {
+                document.getElementById("scrolly-section").classList.add("d-none");
+            } else {
+                document.getElementById("scrolly-section").classList.remove("d-none");
             }
-        })
+        });
+
+        function bgChanger() {
+
+            var currentBackgroundColor = document.body.style.backgroundColor;
+            if (currentBackgroundColor === "" || currentBackgroundColor === "white") {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+                document.getElementById("modeChange").style.backgroundColor = "white"
+                document.getElementById("modeChange").style.color = "black"
+                document.getElementById("modeChange").style.padding = "20px";
+                document.getElementById("modeChange").style.marginRight = "20px";
+
+            } else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+        }
     </script>
 </body>
 
